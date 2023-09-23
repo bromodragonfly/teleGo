@@ -1,7 +1,6 @@
 package telegram
 
-
-// TODO: сделать общую  структуру "BaseResponse" и добавлять информацию для запроса отдельно
+// TODO: create stucrure "basePath" and add information to req separately
 type UpdateSResponse struct{
 	Ok bool `json:"ok"`
 	Result []Update `json:"result"`

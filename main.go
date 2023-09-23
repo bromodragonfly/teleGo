@@ -3,10 +3,17 @@ package main
 import (
 	"flag"
 	"log"
+	"telego/clients/telegram"
+)
+
+//TODO: get HOST from flag
+const (
+	tgBotHost = "api.telegram.org"
 )
 
 func main() {
-	t, err := mustToken()
+	tgClient := telegram.New(tgBotHost, mustToken())
+
 }
 
 func mustToken() string {
